@@ -1,0 +1,49 @@
+@import'../styles/commons.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,300&display=swap');
+
+.SideBarMenuCardView {
+    background-color: #222222;
+    text-align: center;
+    margin-bottom: 15px;
+
+
+    .profile {
+        border-radius: 5%;
+
+        // padding: 5px;
+        box-sizing: border-box;
+        max-width: 128px;
+    }
+
+    .profileInfo {
+        overflow: hidden;
+        height: 64px;
+        @include transition(height);
+
+        .name {
+            font-size: 15px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+        }
+
+        .url {
+            a {
+                color: #79a8ff;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 300;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+
+
+    }
+
+    .profileInfocollapsed {
+        @include transition(height);
+
+        display: none;
+    }
+}

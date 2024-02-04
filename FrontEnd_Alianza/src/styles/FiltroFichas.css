@@ -1,0 +1,166 @@
+.layout {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    /* border-radius: 8px; */
+}
+
+.filtro {
+    width: 1000px;
+    margin-bottom: 35px;
+    position: relative
+}
+
+
+.divEnd {
+    width: 100%;
+
+
+}
+
+
+.radioLabel :hover {
+    background: #752628;
+    color: #fff;
+}
+
+.btnLimpiar {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    margin-top: -15px;
+}
+
+.btnExcel {
+    font-family: inherit;
+    /* font-size: 20px; */
+    height: 80%;
+    background: #28A66B;
+    color: white;
+    fill: rgb(155, 153, 153);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+
+.btnExcel span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.icono {
+    transform: scale(1.4);
+}
+
+.btnExcel .icono {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btnExcel:hover {
+    background: #178047;
+}
+
+.btnExcel:hover .svg-wrapper {
+    transform: scale(1.25);
+    transition: .5s linear;
+}
+
+.btnExcel:hover .icono {
+    transform: translateX(2.4em) scale(1.5);
+    fill: #fff;
+}
+
+.btnExcel:hover span {
+    opacity: 0;
+    transition: .5s linear;
+}
+
+.btnExcel:active {
+    transform: scale(0.95);
+}
+
+
+
+/* PFD */
+
+.btnPdf {
+    font-family: inherit;
+    /* font-size: 20px; */
+    height: 80%;
+    background: #FF281D;
+    color: white;
+    fill: rgb(155, 153, 153);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+
+.btnPdf span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.icono {
+    transform: scale(1.4);
+}
+
+.btnPdf .icono {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.iconoView {
+    transform: scale(1.2);
+}
+
+.btnPdf .iconoView {
+    display: block;
+}
+
+.btnPdf:hover {
+    background: #B51308;
+}
+
+.btnPdf:hover .svg-wrapper {
+    transform: scale(1.25);
+    transition: .5s linear;
+}
+
+.btnPdf:hover .icono {
+    transform: translateX(2.4em) scale(1.5);
+    fill: #fff;
+}
+
+.btnPdf:hover span {
+    opacity: 0;
+    transition: .5s linear;
+}
+
+.btnPdf:active {
+    transform: scale(0.95);
+}
